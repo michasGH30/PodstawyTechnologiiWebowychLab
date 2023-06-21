@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zarządzanie DOM</title>
+		<link rel="stylesheet" href="styles/style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Moje kontakty</h1>
+		</header>
+		<main>
+			<article>
+				<table>
+					<thead>
+						<tr>
+							<th>ID</th>
+							<th>Imię</th>
+							<th>Nazwisko</th>
+							<th>E-mail</th>
+							<th>Wiek</th>
+							<th>Data urodzenia</th>
+							<th>Płeć</th>
+							<th>Grupa</th>
+						</tr>
+					</thead>
+					<tbody id="cialo"></tbody>
+					<tfoot></tfoot>
+				</table>
+				<p>Podaj imię:</p>
+				<input type="text" name="imie" id="imie" /> <br />
+				<p>Podaj nazwisko</p>
+				<input type="text" name="nazwisko" id="nazwisko" /> <br />
+				<p>Podaj e-mail:</p>
+				<input type="email" name="email" id="email" /> <br />
+				<p>Podaj wiek</p>
+				<input type="number" name="wiek" id="wiek" /> <br />
+				<p>Podaj datę urodzenia:</p>
+				<input type="date" name="uro" id="uro" /> <br />
+				<p>Podaj płeć</p>
+				<input type="radio" name="plec" id="men" value="Mężczyzna" />
+				<label for="men">Mężczyzna</label>
+				<input type="radio" name="plec" id="women" value="Kobieta" />
+				<label for="women">Kobieta</label>
+				<input type="radio" name="plec" id="bag" value="Walmart Bag" />
+				<label for="bag">Walmart Bag</label>
+				<br />
+				<p>Podaj grupę:</p>
+				<select name="grupa" id="grupa">
+					<option value="rodzina">Rodzina</option>
+					<option value="przyjaciele">Przyjaciele</option>
+					<option value="praca">Praca</option>
+					<option value="znajomi">Znajomi</option>
+				</select>
+				<br />
+				<br />
+				<input type="button" value="Dodaj znajomego" id="dodaj" class="klawiatura" />
+				<span class="nad">Dodajemy znajomego do listy</span>
+				<br />
+				<br />
+				<img src="images/k1.jpg" alt="kapibara" class="biega" width="100px" height="70px" id="kapibara" />
+			</article>
+		</main>
+		<footer>Ta strona nie ma celu zarabiania. Została wykonana tylko w celach edukacyjnych. &copy; 2023 Michał Żuk</footer>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+	background-color: rgb(56, 55, 55);
+	color: rgb(211, 211, 211);
+	font-size: 25px;
+	text-align: center;
+}
+
+a:link {
+	color: rgb(211, 211, 211);
+	text-decoration: none;
+}
+
+a:visited {
+	color: rgb(182, 0, 176);
+	text-decoration: none;
+}
+
+a:hover {
+	color: aqua;
+}
+
+ul,
+ol {
+	list-style-position: inside;
+}
+
+table {
+	margin: auto;
+	text-align: center;
+	font-size: 25px;
+}

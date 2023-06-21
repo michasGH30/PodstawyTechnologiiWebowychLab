@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zarządzanie DOM</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>CV</h1>
+		</header>
+		<nav>
+			<a href="index.html">Filmy</a><a href="technologie.html" class="obecny">Technologie programistyczne</a
+			><a href="przelicznik.html">Przelicznik walut</a>
+		</nav>
+		<main>
+			<article>
+				<header>
+					<h3>Technologie jakie opanowałem</h3>
+				</header>
+				<ol id="tech"></ol>
+				<p>Podaj technologię:</p>
+				<input type="text" name="nazwa" id="nazwa" /> <br />
+				<br />
+				<input type="button" value="Dodaj technologię" id="dodaj_tech" /> <br />
+				<br />
+				<input type="button" value="Usuń ostanią" id="usun" /> <br />
+				<br />
+				<input type="button" value="Usuń wszystkie" id="wszystkie" /> <br />
+			</article>
+		</main>
+		<footer>Ta strona nie ma celu zarabiania. Została wykonana tylko w celach edukacyjnych. &copy; 2023 Michał Żuk</footer>
+		<script src="technologie.js"></script>
+	</body>
+</html>

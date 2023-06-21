@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>jQuery</title>
+		<link rel="stylesheet" href="styles/style.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<header id="header"></header>
+
+		<hr />
+		<!-- ***************************************************************************************** -->
+		<main>
+			<div id="potrawy">
+				<ol>
+					<li>Żurek</li>
+					<li>Święconka</li>
+					<li>Baranek czekoladowy</li>
+				</ol>
+			</div>
+			<input type="button" value="Pokaż/Ukryj" id="widocznosc" />
+
+			<hr />
+			<!-- ***************************************************************************************** -->
+			<p class="kolorki">
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, nulla. Fugit veniam, vitae eum maiores cupiditate expedita
+				nisi nesciunt facere ea perferendis ipsum facilis, saepe inventore excepturi, id unde tempora.
+			</p>
+			<p class="kolorki">
+				Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat error maxime nostrum blanditiis in rem tempore officia a
+				ducimus, architecto vel. Pariatur mollitia deleniti, necessitatibus sapiente ipsam aut natus quod.
+			</p>
+			<p class="kolorki">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Error molestias ratione quos eos ipsum itaque eius ex mollitia aut,
+				impedit id tenetur, minima, quia doloribus quaerat inventore cumque ut sit.
+			</p>
+			<select name="kolory" id="kolory">
+				<option value="red">Czerwony</option>
+				<option value="blue">Niebieski</option>
+				<option value="lime">Zielony</option>
+				<option value="magenta">Fioletowy</option>
+				<option value="yellow">Żółty</option>
+			</select>
+			<br />
+			<br />
+			<input type="button" value="Zmień kolor czcionki" id="czcionka" />
+			<br />
+			<br />
+			<input type="button" value="Zmień kolor tła" id="tlo" />
+
+			<hr />
+			<!-- ***************************************************************************************** -->
+			<p id="zyczenia" class="bad">Nawzajem.</p>
+			<input type="button" value="Brzdyko" id="bad" /><input type="button" value="Ładnie" id="good" />
+
+			<hr />
+			<!-- ***************************************************************************************** -->
+			<p id="zmiana_tekstu">Czekam.</p>
+			<textarea name="wstaw" id="wstaw" cols="30" rows="10"></textarea>
+
+			<hr />
+			<!-- ***************************************************************************************** -->
+			<img src="images/baranek.jpg" alt="Baranek wielkanocny" class="big" id="big_img" />
+			<div id="galeria">
+				<img src="images/baranek.jpg" alt="Baranek wielkanocny" class="smoll" />
+				<img src="images/koszyczek.jpg" alt="Koszyczek wielkanocny" class="smoll" />
+				<img src="images/palma.jpg" alt="Palma wielkanocna" class="smoll" />
+				<img src="images/pisanki.jpg" alt="Pisanki wielkanocne" class="smoll" />
+			</div>
+
+			<hr />
+			<!-- ***************************************************************************************** -->
+			<h3>Lista rzeczy do zrobienia przed świętami</h3>
+			<ul id="lista"></ul>
+			<p>Podaj rzecz:</p>
+			<input type="text" name="rzecz" id="rzecz" /> <br />
+			<br />
+			<input type="button" value="Dodaj rzecz do zrobienia" id="dodaj" />
+		</main>
+		<footer>Strona została wykonana tylko w celach edukacyjnych. &copy; 2023 Michał Żuk</footer>
+		<script src="scripts/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+body {
+	background-color: rgb(43, 43, 43);
+	color: rgb(202, 202, 202);
+	text-align: center;
+	font-size: 25px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="number"],
+textarea,
+select {
+	font-size: 25px;
+}
+
+ul {
+	text-align: center;
+	list-style-position: inside;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:link {
+	color: rgb(255, 157, 157);
+}
+a:hover {
+	color: rgb(92, 179, 255);
+}
+
+a:visited {
+	color: rgb(84, 255, 84);
+}

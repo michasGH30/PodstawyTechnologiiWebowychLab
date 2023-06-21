@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formularz</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Aplikacja z formularzem</h1>
+		</header>
+		<main>
+			<form action="welcome.php" method="post">
+				<p>Podaj imię:</p>
+				<input type="text" name="imie" id="imie" /> <br />
+				<p>Podaj nazwisko:</p>
+				<input type="text" name="naz" id="naz" />
+				<br />
+				<br />
+				<select name="kolory" id="kolory">
+					<option value="red">Czerwony</option>
+					<option value="blue">Niebieski</option>
+					<option value="green">Zielony</option>
+				</select>
+				<br />
+				<br />
+				<input type="submit" value="Wyślij" />
+			</form>
+		</main>
+	</body>
+</html>

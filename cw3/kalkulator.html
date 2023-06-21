@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Interaktywna strona</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>
+				<a href="index.html" class="header">Strona główna</a>
+			</h1>
+		</header>
+		<nav><a href="index.html">Strona Główna</a><a href="galeria.html">Galeria zdjęć</a><a href="kalkulator.html">Kalkulator</a></nav>
+		<main>
+			<header>
+				<h2>Kalkulator</h2>
+			</header>
+			<article>
+				<p id="wynik">Wynik działania.</p>
+				<p>Podaj 1 liczbę:</p>
+				<input type="number" name="n1" id="n1" /> <br />
+				<p>Podaj 2 liczbę:</p>
+				<input type="number" name="n2" id="n2" /> <br />
+				<br />
+
+				<select name="dzialania" id="dzialania">
+					<option value="+">+</option>
+					<option value="-">-</option>
+					<option value="*">*</option>
+					<option value="/">/</option>
+				</select>
+				<br />
+				<br />
+				<input type="button" value="=" onclick="wykonaj_dzialanie()" class="w" />
+			</article>
+		</main>
+		<footer>Strona została wykonana tylko w celach edukacyjnych. &copy; 2023 Michał Żuk</footer>
+		<script src="interactive.js"></script>
+	</body>
+</html>

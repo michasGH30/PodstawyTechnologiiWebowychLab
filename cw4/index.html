@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zarządzanie DOM</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Filmy</h1>
+		</header>
+		<nav>
+			<a href="index.html" class="obecny">Filmy</a><a href="technologie.html">Technologie programistyczne</a
+			><a href="przelicznik.html">Przelicznik walut</a>
+		</nav>
+		<main>
+			<article>
+				<table>
+					<thead>
+						<tr>
+							<th>Lp.</th>
+							<th>Tytuł</th>
+							<th>Reżyser</th>
+							<th>Rok produkcji</th>
+						</tr>
+					</thead>
+					<tbody id="cialo"></tbody>
+					<tfoot></tfoot>
+				</table>
+				<p>Podaj tytuł filmu:</p>
+				<input type="text" name="tytul" id="tytul" /> <br />
+				<p>Podaj reżysera filmu:</p>
+				<input type="text" name="rez" id="rez" /> <br />
+				<p>Podaj rok produkcji filmu:</p>
+				<input type="number" name="rok" id="rok" /> <br />
+				<br />
+				<input type="button" value="Dodaj film" id="dodaj" />
+			</article>
+		</main>
+		<footer>Ta strona nie ma celu zarabiania. Została wykonana tylko w celach edukacyjnych. &copy; 2023 Michał Żuk</footer>
+		<script src="script.js"></script>
+	</body>
+</html>

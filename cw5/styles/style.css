@@ -1,0 +1,139 @@
+body {
+	background-color: rgb(43, 43, 43);
+	color: rgb(202, 202, 202);
+	text-align: center;
+	font-size: 25px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+table {
+	margin: auto;
+	border-spacing: 30px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="button"],
+input[type="email"],
+input[type="date"],
+input[type="radio"],
+select {
+	font-size: 25px;
+}
+
+td {
+	padding: 5px;
+}
+
+td.rodzina {
+	background-color: green;
+}
+
+td.przyjaciele {
+	background-color: purple;
+}
+
+td.praca {
+	background-color: red;
+}
+td.znajomi {
+	background-color: blue;
+}
+
+footer {
+	margin-top: 20px;
+}
+
+input.klawiatura {
+	display: inline-block;
+	padding: 15px 25px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: #4caf50;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #999;
+	position: relative;
+}
+
+span.nad {
+	visibility: hidden;
+	width: 400px;
+	height: 30px;
+	background-color: black;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+	position: absolute;
+	z-index: 1;
+	top: 104%;
+	left: 50%;
+	margin-left: -190px;
+}
+
+input.klawiatura:hover {
+	background-color: #3e8e41;
+}
+
+input.klawiatura:active {
+	background-color: #3e8e41;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+span.nad::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+input.klawiatura:hover + span.nad {
+	visibility: visible;
+}
+@keyframes example {
+	0% {
+		left: 0px;
+		top: 0px;
+	}
+	20% {
+		left: 200px;
+		top: 0px;
+	}
+	40% {
+		left: 200px;
+		top: -200px;
+	}
+	60% {
+		left: -200px;
+		top: -200px;
+	}
+	80% {
+		left: -200px;
+		top: 0px;
+	}
+	100% {
+		left: 0px;
+		top: 0px;
+	}
+}
+
+/* The element to apply the animation to */
+img.biega {
+	position: relative;
+}
+
+img.biega_anim {
+	position: relative;
+	animation-name: example;
+	animation-duration: 4s;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Interaktywna strona</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>
+				<a href="index.html" class="header">Strona główna</a>
+			</h1>
+		</header>
+		<nav><a href="index.html">Strona Główna</a><a href="galeria.html">Galeria zdjęć</a><a href="kalkulator.html">Kalkulator</a></nav>
+		<main>
+			<header>
+				<h2>Galeria zdjęć</h2>
+			</header>
+			<article>
+				<img src="img/k1.jpg" alt="kapibara" id="do_zmiany" /> <br />
+				<img src="img/k1.jpg" alt="kapibara" class="maly" onclick="zmiana_zdjecia(this)" />
+				<img src="img/k2.jpg" alt="kapibara" class="maly" onclick="zmiana_zdjecia(this)" />
+				<img src="img/k3.jpg" alt="kapibara" class="maly" onclick="zmiana_zdjecia(this)" />
+				<img src="img/k4.jpg" alt="kapibara" class="maly" onclick="zmiana_zdjecia(this)" />
+			</article>
+		</main>
+		<footer>Strona została wykonana tylko w celach edukacyjnych. &copy; 2023 Michał Żuk</footer>
+		<script src="interactive.js"></script>
+	</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Interaktywna strona</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>
+				<a href="index.html" class="header">Strona główna</a>
+			</h1>
+		</header>
+		<nav><a href="index.html">Strona Główna</a><a href="galeria.html">Galeria zdjęć</a><a href="kalkulator.html">Kalkulator</a></nav>
+		<main>
+			<header>
+				<h2>Interaktywne elementy</h2>
+			</header>
+			<article>
+				<div id="demo">To jest interaktywne pole.</div>
+				<p>Wprowadź tekst:</p>
+				<input type="text" name="zmiana" id="zmiana" />
+				<input type="button" onclick="zmiana_tekstu()" value="Zmień tekst" id="zmiana_btn" />
+				<br />
+				<p>Zmiana rozmiaru czcionki:</p>
+				<input type="number" name="pixels" id="pixels" />
+				<input type="button" onclick="zmiana_css()" value="Zmień rozmiar czcionki" />
+				<br />
+				<p>Zmiana atrybutów przycisku:</p>
+				<input type="button" onclick="zmiana_atrybutow()" value="Zmieniamy tekst przycisku" />
+				<p>Zmiana widoczności pola:</p>
+				<input type="button" value="Zmień widoczność" onclick="zmiana_widocznosci()" />
+			</article>
+		</main>
+		<footer>Strona została wykonana tylko w celach edukacyjnych. &copy; 2023 Michał Żuk</footer>
+		<script src="interactive.js"></script>
+	</body>
+</html>

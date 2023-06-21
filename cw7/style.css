@@ -1,0 +1,14 @@
+body {
+	background-color: rgb(43, 43, 43);
+	color: rgb(202, 202, 202);
+	text-align: center;
+	font-size: 25px;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+
+input[type="text"],
+input[type="submit"],
+select {
+	font-size: 25px;
+}

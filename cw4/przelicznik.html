@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Zarządzanie DOM</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header>
+			<h1>Przelicznik walut</h1>
+		</header>
+		<nav>
+			<a href="index.html">Filmy</a><a href="technologie.html">Technologie programistyczne</a
+			><a href="przelicznik.html" class="obecny">Przelicznik walut</a>
+		</nav>
+		<main>
+			<header>
+				<h2>Przelicznik walut</h2>
+			</header>
+			<article>
+				<p>Podaj kwotę w zł:</p>
+				<input type="number" name="zl" id="zl" />
+				<br />
+				<br />
+				<select name="opcje" id="opcje">
+					<option value="euro">Euro</option>
+					<option value="dolar">Dolar</option>
+				</select>
+				<br />
+				<br />
+				<input type="button" value="Przelicz" id="przelicz" />
+				<p id="wynik">Wynik:</p>
+			</article>
+		</main>
+		<footer>Ta strona nie ma celu zarabiania. Została wykonana tylko w celach edukacyjnych. &copy; 2023 Michał Żuk</footer>
+		<script src="przelicznik.js"></script>
+	</body>
+</html>
